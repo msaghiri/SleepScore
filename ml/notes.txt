@@ -1,0 +1,16 @@
+--- Clear quadratic correlation between "sleep_deficit" and "sleep_score"
+--- Sleep score seems to increase by ~1 entire point when the subject takes over 4000 daily steps, beyond that, correlation seems very limited
+--- Clear linear correlation in the negative direction found between stress level and sleep score
+--- Individuals of a normal BMI have had minimum sleep scores of 5, whereas overweight/obese subjects have had a floor of 4
+
+--- Male individuals have an average lower sleep score by ~0.5, while under-predicting the sleep score for men reduced the MSE by 0.2, I decided to omit that feature 
+because I felt that since many of these statistics are subjective (such as sleep score and stress), the correlation could be subjective or due to self-reporting bias.
+
+
+The mean sleep score for individuals aged 27 to 34 is 5.01
+The mean sleep score for individuals aged 34+ is significantly higher, at 7.54
+
+---Adding a boost for individuals that walk over 4000 steps improved the MSE of the final model by ~0.9 points.
+---Adding a penalty for BMI categories and gender brought the MSE down as well
+
+Acheived a final MSE of 0.31
