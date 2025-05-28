@@ -78,7 +78,7 @@ class Training:
         bias += 0.1
         y_hat = weight_1 * (X_squared) + bias
         mse = np.mean((y_hat - y)**2)
-        print("MSE:", mse) #MSE: 0.354820493268653
+        print("MSE:", mse) 
     
 
         return weight_1, bias #-0.4699773730911285, 8.588984016359197
